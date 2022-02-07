@@ -18,8 +18,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: print
-        env:
+      - env:
           WELCOME: welcome
           MY_NAME: johe
-        run:
+      - run:
           echo $WELCOME $MY_NAME.
