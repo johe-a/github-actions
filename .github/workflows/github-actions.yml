@@ -18,6 +18,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: print
+      - uses: actions/setup-node@v2
       - env:
           WELCOME: welcome
           MY_NAME: johe
