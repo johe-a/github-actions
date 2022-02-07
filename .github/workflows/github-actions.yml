@@ -13,3 +13,12 @@ jobs:
           node-version: '14'
       - run: npm install -g bats
       - run: bats -v
+  echo-env:
+    runs-on: ubuntu-lastest
+    steps:
+      - name: print
+        env:
+          WELCOME: welcome
+          MY_NAME: johe
+        run:
+          echo $WELCOME $MY_NAME.
