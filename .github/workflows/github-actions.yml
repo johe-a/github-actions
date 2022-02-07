@@ -14,7 +14,7 @@ jobs:
       - run: npm install -g bats
       - run: bats -v
   echo-env:
-    runs-on: ubuntu-lastest
+    runs-on: ubuntu-latest
     steps:
       - name: print
         env:
